@@ -15,7 +15,7 @@ export const getPasswordResetTokenByEmail = async (email: string) => {
     const passwordResetToken = await db.passwordResetToken.findFirst({
       where: { email },
     });
-    return passwordReset  Token;
+    return passwordResetToken;
   } catch {
     return null;
   }
